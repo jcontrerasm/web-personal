@@ -1,0 +1,58 @@
+{
+  "name": "web-personal",
+  "version": "1.0.0",
+  "description": "Proyecto personal - Web Personal.",
+  "main": "src",
+  "author": "Juan Carlos Raúl Contreras Meneses <jcontrerasmeneses@gmail.com>",
+  "private": true,
+  "scripts": {
+    "prepare": "cd .. && husky install",
+    "start": "next start",
+    "start:dev": "next",
+    "build": "next build",
+    "lint": "eslint ./src --ext .tsx --no-error-on-unmatched-pattern",
+    "stylelint": "stylelint ./src/**/*.{css,scss,styled.tsx} --allow-empty-input",
+    "test": "jest test --passWithNoTests",
+    "test:coverage": "jest test --ci --reporters=jest-junit --passWithNoTests --coverage"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "styled-components",
+    "jest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "styled-components": "5.3.5"
+  },
+  "devDependencies": {
+    "@stylelint/postcss-css-in-js": "0.38.0",
+    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/react": "13.3.0",
+    "@testing-library/user-event": "14.2.0",
+    "@types/jest": "27.5.1",
+    "@types/node": "17.0.36",
+    "@types/react": "18.0.9",
+    "babel-plugin-styled-components": "1.11.1",
+    "eslint": "8.16.0",
+    "eslint-config-vtex-react": "9.0.0",
+    "eslint-plugin-react-hooks": "4.5.0",
+    "husky": "8.0.1",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
+    "jest-junit": "13.2.0",
+    "prettier": "2.6.2",
+    "stylelint": "14.8.5",
+    "sugarss": "4.0.1",
+    "typescript": "4.7.2"
+  }
+}

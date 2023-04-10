@@ -1,0 +1,13 @@
+.vscode/
+.idea/
+.next/
+coverage/
+node_modules/
+build/
+*.env
+!.default.env
+.DS_Store
+next-env.d.ts
+out
+junit.xml
+*values.yaml

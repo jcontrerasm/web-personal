@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "target": "ES5",
+    "module": "esnext",
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@configs/*": ["src/configs/*"],
+      "@containers/*": ["src/containers/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@environments/*": ["src/environments/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@mappers/*": ["src/mappers/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@api/*": ["mocks/api/*"]
+    },
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2015.promise"
+    ],
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

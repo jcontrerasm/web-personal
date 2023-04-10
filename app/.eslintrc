@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "vtex-react/io"
+  ],
+  "plugins": [
+    "react-hooks"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "off",
+      {
+        "singleQuote": true
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": ["off"],
+    "node/global-require": ["off"],
+    "@typescript-eslint/no-var-requires": ["off"],
+    "@typescript-eslint/no-require-imports": ["off"]
+  }
+}
